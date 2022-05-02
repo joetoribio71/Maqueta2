@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.central{
+    display: grid;
+    grid-template-columns: 28% 28% 44%;
+    grid-template-rows: 50px 208px 50px 300px 60px 60px;
+}
+nav{
+    background-color: rgb(80, 224, 37);
+    margin: 2px;
+}
+.cabeza{
+    background-color: rgb(231, 218, 33);
+    margin: 2px;
+}
+header{
+    background-color: rgb(57, 153, 231);
+    margin: 2px;
+}
+.izq{
+    background-color: rgb(206, 44, 179);
+    margin: 2px;
+}
+.article1{
+    background-color: rgb(41, 58, 214);
+    margin: 2px;
+}
+.derc{
+    background-color: rgb(100, 166, 220);
+    margin: 2px;
+}
+.izq2{
+    background-color: rgb(210, 46, 183);
+    margin: 2px;
+}
+.article2{
+    background-color: rgb(186, 111, 25);
+    margin: 2px;
+}
+.derc2{
+    background-color: rgb(155, 93, 21);
+    margin: 2px;
+}
+footer{
+    background-color: rgb(219, 23, 23);
+    margin: 2px;
+}
+h3{
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+    color: black; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+h2{
+    font-size: 150%;
+    text-align: center;
+    position: relative;
+    color: rgb(235, 220, 220); 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+@media all and (max-width: 990px){
+    aside, article, footer, div, header, nav{
+        grid-column: 1 / span 3;
+    }
+    .central{
+        grid-template-rows: repeat(18, 100px);
+
+    }
+}
